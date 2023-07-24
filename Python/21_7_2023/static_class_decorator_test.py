@@ -5,12 +5,11 @@ class FixedFloat:
     def __repr__(self):
         return f"<FixedFloat {self.amount:.2f}>"
     @classmethod
-    def from_sum(cls,val1,val2):
-        return cls(val1+val2)
+    def from_sum(self,val1,val2):
+        return FixedFloat(val1+val2)
     
 number = FixedFloat(8.3255)
 print(number.from_sum(4.45345,.999))
-print(number.__class__)
 
     
 class Euro(FixedFloat):

@@ -13,6 +13,7 @@ def email_engaged_user(user):
         user.score = perform_calculation(user.engagement_metrics)
     except KeyError:
         print('Incorrect values provided to our calculation function.')
+        raise
     else:
         if user.score > 500:
             send_engagement_notification(user)
@@ -26,5 +27,5 @@ def send_engagement_notification(user):
     print(f'Notification sent to {user}.')
 
 
-my_user = User('Rolf', {'clicks': 61, 'hits': 100})
+my_user = User('Rolf', {'clicks': 181, 'hits': 100})
 email_engaged_user(my_user)
