@@ -1,1 +1,3 @@
+abhi,23,cse,CU
+kittu,13,mba,IIM
 Tunnu,14,cse,IIT

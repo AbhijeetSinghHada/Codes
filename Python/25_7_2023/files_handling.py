@@ -1,0 +1,10 @@
+fs = open('text.txt','r')
+fileContent = fs.read()
+print(fileContent)
+fs.close()
+user_input = input("Enter your name : ")
+fs_w = open('text.txt','w')
+fs_w.write(user_input)
+fs_w.write(user_input)
+fs_w.close()
+
