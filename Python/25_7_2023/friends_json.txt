@@ -1,17 +1,16 @@
 {
-    "friends" : [
-        {
-            "name" : "Kittu",
-            "degree" : "IIT"
-        },
-        {
-            "name" : "Tunnu",
-            "degree" : "IIM"
-        },
-        {
-            "name" : "Abhi",
-            "degree" : "MBA"
-        }
-
-    ]
+ "friends": [
+  {
+   "degree": "IIT",
+   "name": "Kittu"
+  },
+  {
+   "degree": "IIM",
+   "name": "Tunnu"
+  },
+  {
+   "degree": "MBA",
+   "name": "Abhi"
+  }
+ ]
 }
