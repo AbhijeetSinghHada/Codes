@@ -2,7 +2,6 @@ from Search_Employee import search_emp
 from view_employee import View
 
 def modify_employee(name):
-    empData ={}
     index= search_emp(name)
     index -=1
     obj_view = View()
