@@ -1,5 +1,6 @@
-fs = open("csvfile.txt", "r")
+fs = open("csvfile.txt", "w")
 lines = fs.readlines()
+fs.writelines
 fs.close()
 lines = [line.strip().split(",") for line in lines]
 for line in lines:

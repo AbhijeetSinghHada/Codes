@@ -1,22 +1,13 @@
 import json
+from Database import Database
 
 
-class DeleteEmployee:
-    def __init__(self, employee_name):
-        self.name = employee_name
-        self.delete_employee()
+def delete_employee(emp_name):
+    database = Database()
+    data = database.fetch_data()
 
-    def delete_employee(self):
-        with open("data.json", "r") as file:
-            data = json.load(file)
+    for index, emp in enumerate(data["employee"], start=0):
+        if emp["name"].lower() == emp_name.lower():
+            del data["employee"][index]
 
-        for emp in data["employee"]:
-            count = 0
-            if emp["name"] == self.name:
-                del data["employee"][count]
-            count += 1
-
-        with open("data.json", "w") as file:
-            json.dump(data, file, indent=2)
-
-        print(data)
+    database.update_database(data)
