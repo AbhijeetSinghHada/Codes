@@ -1,4 +1,6 @@
 from . import databaseConnection
+import traceback
+import sys
 # { 'Library' : [
 #     {
 #        'name' : sfffffff
@@ -91,5 +93,26 @@ def mark_book_as_read(name):
             return
     print("Book not found.")
     
+def SearchBookByName(name):
+    with databaseConnection.DatabaseConnection('data.db') as connection:
+        cursor = connection.cursor()
+        try:
+            cursor.execute(f"SELECT * FROM books WHERE name='{name}'")
+        except sqlite3.Error as er:
+            print('SQLite error: %s' % (' '.join(er.args)))
+            print("Exception class is: ", er.__class__)
+            print('SQLite traceback: ')
+            exc_type, exc_value, exc_tb = sys.exc_info()
+            print(traceback.format_exception(exc_type, exc_value, exc_tb))
+        data = cursor.fetchall()
+        for index,book in enumerate(data,start=1):
+            print()
+            print(f"Book No. {index}")
+            print(f"Name of Book {book[0]}")
+            print(f"Author of Book {book[1]}")
+            # ' OR 1=1 --
+            # ' ; DELETE FROM books;--
 if __name__=="__main__":
-    update_database(fetch_data())
+    with databaseConnection.DatabaseConnection('data.db') as connection:
+        cursor = connection.cursor()
+        cursor.execute('CREATE TABLE IF NOT EXISTS Books(name text,author text,read text)')

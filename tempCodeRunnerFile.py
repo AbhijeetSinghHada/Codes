@@ -1,10 +1,7 @@
-import sqlite3
+#Generator Expression:
+import timeit
 
-connection = sqlite3.connect('data.db')
-cursor = connection.cursor()
+print(timeit.timeit('''gen_exp = (i for i in range(100) if i % 2 == 0)''', number=1000000))
+#List Comprehension:
 
-
-
-cursor.execute("CREATE TABLE Books(name text primary key, author text, read text)")
-connection.commit()
-connection.close()
+print(timeit.timeit('''list_com = [i for i in range(100) if i % 2 == 0]''', number=1000000))

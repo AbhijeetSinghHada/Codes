@@ -8,6 +8,7 @@ Enter the Option Number Below :
 3. Mark Book as Read
 4. Delete Book
 5. List All Unread Books
+6. Search Book By Name
 q. Quit
 """)
 user_choice = None
@@ -29,6 +30,10 @@ def prompt_delete_book():
 def prompt_mark_book_as_read():
     name = input("Enter the Name of the Book To mark Read : ")
     Database.mark_book_as_read(name)
+def prompt_SearchName():
+    name = input("Enter the Name of the Book To Search : ")
+    Database.SearchBookByName(name)
+
 if __name__=="__main__":
     while(user_choice!='q'):
         Menu()
@@ -37,7 +42,8 @@ if __name__=="__main__":
             '2' : Database.list_books,
             '3' : prompt_mark_book_as_read,
             '4' : prompt_delete_book,
-            '5' : Database.list_undread_books
+            '5' : Database.list_undread_books,
+            '6' : prompt_SearchName
         }
         user_choice = input("Enter Option : ")
         print()
@@ -49,4 +55,4 @@ if __name__=="__main__":
     print("Thank You For Visiting")
     print("Books Store By Abhi")
 
-            
+               
