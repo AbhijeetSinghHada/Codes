@@ -1,0 +1,3 @@
+2023-08-01 11:36:56,053 INFO     [tempCodeRunnerFile.py: 8]: This is just info nothing will print
+2023-08-01 11:36:56,053 WARNING  [tempCodeRunnerFile.py: 9]: This will surely print
+2023-08-01 11:36:56,053 CRITICAL [tempCodeRunnerFile.py: 11]: A Critical  Error has occured
