@@ -17,7 +17,7 @@ class numberiterate:
 my_gen = numberiterate()
 
 # print(my_gen.__next__())
-print(sum(numberiterate()))
+print(sum(next(my_gen)))
 
 for i in numberiterate():
     print(i)
