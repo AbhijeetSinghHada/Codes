@@ -1,0 +1,54 @@
+07-08-2023 01:47:19 DEBUG    [proactor_events.py: 633]: Using proactor: IocpProactor
+07-08-2023 01:47:19 INFO     [main.py: 16]: Loading Book List...
+07-08-2023 01:47:19 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+07-08-2023 01:47:21 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET / HTTP/1.1" 200 51294
+07-08-2023 01:47:22 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:22 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:22 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:22 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:22 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:22 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:22 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:22 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:23 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:25 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:25 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:25 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:25 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:25 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:25 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+07-08-2023 01:47:25 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.

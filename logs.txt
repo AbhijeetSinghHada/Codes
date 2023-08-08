@@ -1,0 +1,279 @@
+02-08-2023 15:27:44 INFO     [main.py: 12]: Loading Book List...
+02-08-2023 15:27:44 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:27:45 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET / HTTP/1.1" 200 51294
+02-08-2023 15:27:46 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:27:46 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-2.html HTTP/1.1" 200 50877
+02-08-2023 15:27:47 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:27:53 INFO     [main.py: 12]: Loading Book List...
+02-08-2023 15:27:53 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:27:54 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET / HTTP/1.1" 200 51294
+02-08-2023 15:27:54 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:27:55 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-2.html HTTP/1.1" 200 50877
+02-08-2023 15:27:56 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:27:57 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-3.html HTTP/1.1" 200 51374
+02-08-2023 15:27:57 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:27:58 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-4.html HTTP/1.1" 200 52524
+02-08-2023 15:27:58 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:27:59 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-5.html HTTP/1.1" 200 51829
+02-08-2023 15:28:00 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:00 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-6.html HTTP/1.1" 200 51602
+02-08-2023 15:28:01 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:02 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-7.html HTTP/1.1" 200 51173
+02-08-2023 15:28:02 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:03 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-8.html HTTP/1.1" 200 51144
+02-08-2023 15:28:03 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:04 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-9.html HTTP/1.1" 200 50799
+02-08-2023 15:28:05 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:05 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-10.html HTTP/1.1" 200 51145
+02-08-2023 15:28:06 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:06 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-11.html HTTP/1.1" 200 50534
+02-08-2023 15:28:07 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:08 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-12.html HTTP/1.1" 200 50600
+02-08-2023 15:28:08 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:09 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-13.html HTTP/1.1" 200 51024
+02-08-2023 15:28:10 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:10 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-14.html HTTP/1.1" 200 50778
+02-08-2023 15:28:11 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:11 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-15.html HTTP/1.1" 200 51254
+02-08-2023 15:28:12 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:13 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-16.html HTTP/1.1" 200 50812
+02-08-2023 15:28:14 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:14 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-17.html HTTP/1.1" 200 50806
+02-08-2023 15:28:15 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:16 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-18.html HTTP/1.1" 200 50872
+02-08-2023 15:28:16 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:17 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-19.html HTTP/1.1" 200 51116
+02-08-2023 15:28:18 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:18 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-20.html HTTP/1.1" 200 51109
+02-08-2023 15:28:19 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:20 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-21.html HTTP/1.1" 200 50344
+02-08-2023 15:28:20 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:21 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-22.html HTTP/1.1" 200 50674
+02-08-2023 15:28:22 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:22 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-23.html HTTP/1.1" 200 51558
+02-08-2023 15:28:23 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:24 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-24.html HTTP/1.1" 200 50672
+02-08-2023 15:28:24 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:25 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-25.html HTTP/1.1" 200 51981
+02-08-2023 15:28:26 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:27 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-26.html HTTP/1.1" 200 50512
+02-08-2023 15:28:28 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:28 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-27.html HTTP/1.1" 200 51098
+02-08-2023 15:28:29 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:29 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-28.html HTTP/1.1" 200 51441
+02-08-2023 15:28:30 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:31 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-29.html HTTP/1.1" 200 50263
+02-08-2023 15:28:31 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:32 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-30.html HTTP/1.1" 200 50600
+02-08-2023 15:28:33 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:33 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-31.html HTTP/1.1" 200 50478
+02-08-2023 15:28:34 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:34 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-32.html HTTP/1.1" 200 50631
+02-08-2023 15:28:35 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:36 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-33.html HTTP/1.1" 200 51318
+02-08-2023 15:28:36 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:37 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-34.html HTTP/1.1" 200 50846
+02-08-2023 15:28:38 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:38 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-35.html HTTP/1.1" 200 50549
+02-08-2023 15:28:39 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:39 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-36.html HTTP/1.1" 200 50701
+02-08-2023 15:28:40 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:41 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-37.html HTTP/1.1" 200 50793
+02-08-2023 15:28:41 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:42 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-38.html HTTP/1.1" 200 51639
+02-08-2023 15:28:43 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:43 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-39.html HTTP/1.1" 200 50913
+02-08-2023 15:28:44 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:45 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-40.html HTTP/1.1" 200 50516
+02-08-2023 15:28:45 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:46 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-41.html HTTP/1.1" 200 50615
+02-08-2023 15:28:46 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:47 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-42.html HTTP/1.1" 200 50726
+02-08-2023 15:28:48 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:48 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-43.html HTTP/1.1" 200 50139
+02-08-2023 15:28:49 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:50 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-44.html HTTP/1.1" 200 50142
+02-08-2023 15:28:50 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:51 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-45.html HTTP/1.1" 200 50242
+02-08-2023 15:28:52 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:52 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-46.html HTTP/1.1" 200 50424
+02-08-2023 15:28:53 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:53 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-47.html HTTP/1.1" 200 50088
+02-08-2023 15:28:54 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:55 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-48.html HTTP/1.1" 200 50056
+02-08-2023 15:28:55 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:56 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-49.html HTTP/1.1" 200 49909
+02-08-2023 15:28:56 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+02-08-2023 15:28:57 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET /catalogue/page-50.html HTTP/1.1" 200 50427
+(Thread-1 (increment_counter)) String Thread as Having Count 0
+(Thread-2 (increment_counter)) String Thread as Having Count 0
+(Thread-3 (increment_counter)) String Thread as Having Count 1
+(Thread-4 (increment_counter)) String Thread as Having Count 3
+(Thread-5 (increment_counter)) String Thread as Having Count 4
+(Thread-6 (increment_counter)) String Thread as Having Count 4
+(Thread-7 (increment_counter)) String Thread as Having Count 5
+(Thread-8 (increment_counter)) String Thread as Having Count 6
+(Thread-9 (increment_counter)) String Thread as Having Count 8
+(Thread-10 (increment_counter)) String Thread as Having Count 8
+04-08-2023 14:40:01 DEBUG    [proactor_events.py: 633]: Using proactor: IocpProactor
+04-08-2023 14:40:01 INFO     [main.py: 16]: Loading Book List...
+04-08-2023 14:40:01 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+04-08-2023 14:40:03 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET / HTTP/1.1" 200 51294
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:07 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:08 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:27 DEBUG    [proactor_events.py: 633]: Using proactor: IocpProactor
+04-08-2023 14:40:27 INFO     [main.py: 16]: Loading Book List...
+04-08-2023 14:40:27 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+04-08-2023 14:40:28 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET / HTTP/1.1" 200 51294
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:30 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:31 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:31 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:31 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:31 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:40:31 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:55 DEBUG    [proactor_events.py: 633]: Using proactor: IocpProactor
+04-08-2023 14:41:55 INFO     [main.py: 16]: Loading Book List...
+04-08-2023 14:41:55 DEBUG    [connectionpool.py: 244]: Starting new HTTP connection (1): books.toscrape.com:80
+04-08-2023 14:41:55 DEBUG    [connectionpool.py: 546]: http://books.toscrape.com:80 "GET / HTTP/1.1" 200 51294
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:57 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.
+04-08-2023 14:41:58 DEBUG    [api.py: 439]: Encoding detection: utf_8 is most likely the one.

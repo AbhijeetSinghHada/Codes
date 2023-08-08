@@ -55,7 +55,7 @@ class ParseItem:
         regex = '£[0-9]+\.[0-9]+'
         price = re.search(regex,item_link)
         price = price[0].replace('£','')
-        print(float(price)+91)
+        print(float(price))
 
     def find_rating(self):
         locator = 'article.product_pod p.star-rating'
