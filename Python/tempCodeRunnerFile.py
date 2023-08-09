@@ -1,21 +1,21 @@
-import sqlite3
+import tkinter as tk
+from tkinter import ttk
+def create_file():
+    text_area = tk.Text(notebook)
+    text_area.pack(fill='both',expand=True)
+    notebook.add(text_area,text='Untitled')
+    notebook.select(text_area)
+    root.mainloop()
 
-class Database:
-    CREATE_TABLE = "CREATE TABLE IF NOT EXISTS blog_data(id number, title text, content text)"
-    FETCH_DATA = "SELECT * FROM blog_data"
-    def __init__(self):
-        connection = sqlite3.connect("data.db")
-        self.cursor = connection.cursor()
-        self.cursor.execute(self.CREATE_TABLE)
-        connection.commit()
-    
-    def import_web_data(self):
-        self.cursor.execute('SELECT * FROM blog_data')
-        data = self.cursor.fetchall()
-        print(data)
-        data = [{"id" : x[0],'title' : x[1],'content':x[2]} for x in data]
-        print(data)
+root =tk.Tk()
 
-       
-a = Database()
-a.import_web_data()
+main = ttk.Frame(root)
+main.pack(fill='both', expand=True, padx=1, pady=(4,0))
+
+notebook = ttk.Notebook(main)
+notebook.pack(fill='both',expand=True)
+
+create_file()
+create_file()
+create_file()
+
