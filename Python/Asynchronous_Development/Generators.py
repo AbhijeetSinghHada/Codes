@@ -4,8 +4,10 @@ def countdown(n):
         n -= 1
 
 
-for i in countdown(10):
-    print(i)
+# for i in countdown(10):
+#     print(i)
+while True:
+    print(next(countdown(10)))
 # tasks = [countdown(10), countdown(5), countdown(20)]
 # while tasks:
 #     task = tasks[0]

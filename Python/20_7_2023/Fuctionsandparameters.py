@@ -5,17 +5,23 @@
 # print(add(4,y=46))
 # print(add(y=4,x=46))
 
-#noow lambda function
-sub = lambda x,y:x-y
-add = lambda x,y: x+y
-mul = lambda x,y:x*y
+# noow lambda function
+def sub(x, y): return x-y
+def add(x, y): return x+y
+
+
+def mul(x, y): return x*y
+
 
 operations = {
-    "subtract" : sub,
-    "addition" : add,
-    "multiply" : mul
+    "subtract": sub,
+    "addition": add,
+    "multiply": mul
 }
 
 operation_input = input()
-x,y = map(int,input("Enter Value of x and y : ").split())
-print(operations[operation_input](x,y))
+x, y, a = map(int, input("Enter Value of x and y : ").split())
+print(a)
+print(type(a))
+print(list(a))
+print(operations[operation_input](x, y))

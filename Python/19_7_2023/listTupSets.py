@@ -1,15 +1,17 @@
-# lst = [["Abhi",22],["weff",23],["Sam",6]]
+# lst = [["Abhi", 22], ["weff", 23], ["Sam", 6]]
 
+# lst1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print(lst1.clear())
 # print(lst)
-# #lst[0].clear() #clears all the elements
-# #lst[0].remove("Abhi")
+# lst[1].clear()  # clears all the elements
+# lst[0].remove(22)
 # lst.remove(["Abhi"])
 # print(lst)
 
-#-----------------------------------------x------------------------------------------------
+# -----------------------------------------x------------------------------------------------
 
-# football ={"Abhi","Pranu","Kittu","Modi"}
-# TableTennis = {"Kittu", "Pranu","Nehru"}
+# football ={"Abhi","Tannu","Kittu","Modi"}
+# TableTennis = {"Kittu", "Tannu","Nehru"}
 
 # difference = football.difference(TableTennis)
 # print(difference)# in football but not in TableTennis
@@ -18,34 +20,34 @@
 # print(symdiff) # not common in both
 
 # same = football.union(TableTennis)
-# print(same) #all elements 
+# print(same) #all elements
 # football.add
 # inter = football.intersection(TableTennis)
 
-# print(inter) 
+# print(inter)
 
-#-----------------------------------------x---------------------------------------------------------
+# -----------------------------------------x---------------------------------------------------------
 
-# dictionary = {"Abhi":21, "Chinki": 23, "Tunnu": 19}
-# print(dictionary)
-# dictionary["Happy"] = 46
+dictionary = {"Abhi": 21, "Chinki": 23, "Tunnu": 19}
+print(dictionary)
+dictionary["Happy"] = 46
 
-# print(dictionary)
-# print(dictionary.fromkeys(dictionary.keys()))
-# ls = dictionary.values()
+print(dictionary)
+print(dictionary.fromkeys(dictionary.keys()))
+ls = dictionary.values()
+p
+dictionary = (
+    {"name": "Abhi", "age": 32},
+    {"name": "Tuna", "age": 22},
+    {"name": "Katy", "age": 14},
 
-# dictionary = (
-#     {"name": "Abhi", "age" : 32},
-#     {"name": "Tuna", "age" : 22},
-#     {"name": "Katy", "age" : 14},
-    
-# )
-# i=0
-# for i in range(len(dictionary)):
-#     print(dictionary[i]["name"])
+)
+i = 0
+for i in range(len(dictionary)):
+    print(dictionary[i]["name"])
 
-#--------------------------------------------x-------------------------------
-# # Programming Assignment 
+# --------------------------------------------x-------------------------------
+# # Programming Assignment
 
 # lottery_numbers = {13, 21, 22, 5, 8}
 
@@ -80,19 +82,19 @@
 # print(f'Player {players[0]["Name"]} got {len(players[0]["Number"].intersection(lottery_numbers))} numbers right.')
 # print(f'Player {players[1]["Name"]} got {len(players[1]["Number"].intersection(lottery_numbers))} numbers right.')
 
-#-------------------------------------x--------------------------------------------------
+# -------------------------------------x--------------------------------------------------
 
-players = [
-    {"Name":"Abhi",
-     "Number":[1,8,3,13,21]},
-    {"Name":"Kittu",
-     "Number":[5,7,4,12,9]
-     }
-]
+# players = [
+#     {"Name":"Abhi",
+#      "Number":[1,8,3,13,21]},
+#     {"Name":"Kittu",
+#      "Number":[5,7,4,12,9]
+#      }
+# ]
 
-commaSep = ", ".join(str(r) for r in players[0]["Number"])
-print(commaSep)
-print(f'{players[0]["Name"]} has {commaSep} numbers in his lottery.')
+# commaSep = ", ".join(str(r) for r in players[0]["Number"])
+# print(commaSep)
+# print(f'{players[0]["Name"]} has {commaSep} numbers in his lottery.')
 
-eg = set()
-eg.add("gg")
+# eg = set()
+# eg.add("gg")
