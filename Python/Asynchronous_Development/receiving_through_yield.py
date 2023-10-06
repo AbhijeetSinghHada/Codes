@@ -30,6 +30,6 @@ temp = friend_upper()
 print(temp)
 gr = greet(temp)
 gr.send(None)
+while friends:
+    gr.send("Hello")
 gr.send("Hello")
-print("Hello, World MultiTasking...")
-gr.send("Hiii")

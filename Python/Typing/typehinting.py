@@ -10,6 +10,10 @@ class Person:
     
 person1 = Person('John', 36)
 
+# def func(person):
+#     print(person.name)
+#     print(person.age)
+
 def func(person : Person):
     print(person.name)
     print(person.age)

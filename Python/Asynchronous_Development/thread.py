@@ -4,9 +4,7 @@ from threading import Thread
 
 def ask_user():
     start = time.time()
-    user_input = input('Enter your name : ')
-    greet = f'Hello, {user_input}'
-    print(greet)
+    time.sleep(2)
     print(f'ask_user, {time.time()-start}')
 
 
@@ -24,14 +22,16 @@ print(f'Single Threaded Total Time, {time.time()-start}')
 
 thread1 = Thread(target=complex_cal)
 thread2 = Thread(target=ask_user)
-thread3 = Thread(target=complex_cal)
+# thread3 = Thread(target=complex_cal)
 
 start = time.time()
-thread2.start()
 thread1.start()
-thread3.start()
+thread2.start()
+# thread3.start()
 
+# thread1.join() # if we do not join the thread1 then main thread only waits for thread one to complete not thread two
+# but in background all are running simutaneously so thread1 completed then main completes its
+# work till printing time of two threaded after that thread 1 output is printed
 thread2.join()
-thread1.join()
-thread3.join()
+# thread3.join()
 print(f'Two Threaded Total Time, {time.time()-start}')

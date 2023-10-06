@@ -29,22 +29,26 @@
 # -----------------------------------------x---------------------------------------------------------
 
 dictionary = {"Abhi": 21, "Chinki": 23, "Tunnu": 19}
-print(dictionary)
-dictionary["Happy"] = 46
+# print(dictionary)
+# dictionary.pop("Abhi")
+# print(dictionary)
+# dictionary["Happy"] = 46
 
-print(dictionary)
-print(dictionary.fromkeys(dictionary.keys()))
-ls = dictionary.values()
-p
-dictionary = (
-    {"name": "Abhi", "age": 32},
-    {"name": "Tuna", "age": 22},
-    {"name": "Katy", "age": 14},
+# print(dictionary)
+# print(dictionary.fromkeys(dictionary.keys()))
+# ls = dictionary.values()
+# p
+# dictionary = (
+#     {"name": "Abhi", "age": 32},
+#     {"name": "Tuna", "age": 22},
+#     {"name": "Katy", "age": 14},
 
-)
-i = 0
-for i in range(len(dictionary)):
-    print(dictionary[i]["name"])
+# )
+
+
+# i = 0
+# for i in range(len(dictionary)):
+#     print(dictionary[i]["name"])
 
 # --------------------------------------------x-------------------------------
 # # Programming Assignment
