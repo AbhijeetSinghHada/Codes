@@ -22,6 +22,10 @@ class Student:
     def get_students(cls):
         return cls.students
 
+    def change_mode_for_all(self):
+        Student.mode = "Offline Learning"
+        return self.mode
+
     @classmethod
     def split_students(cls, students):
         name, age, major = students.split(",")
@@ -33,25 +37,39 @@ class Student:
 
 student1 = Student("John", 18, "Computer Science")
 student2 = Student("Jane", 19, "Mathematics")
-
-
-student1.mode = "Offline Learning"
-print(student1.mode)
-print(student2.mode)
-print(student1.return_name_age_major())
-print(student2.return_name_age_major())
-
-Student.change_mode("Mix Learning")
-
-print(student1.mode)
-print(student2.mode)
-
-print(Student.get_students())
-
 student3 = Student("Jack", 20, "Physics")
-print(Student.get_students())
 
-print(student1.students)
+print(student1.mode)
+print(student2.mode)
+print(student3.mode)
 
-student4 = Student.split_students("Jill,21,Chemistry")
-print(student4.return_name_age_major())
+student1.change_mode("Offline Learning")
+print()
+
+print(student1.mode)
+print(student2.mode)
+print(student3.mode)
+
+
+# ===================================
+
+# student1.mode = "Offline Learning"
+# print(student1.mode)
+# print(student2.mode)
+# print(student1.return_name_age_major())
+# print(student2.return_name_age_major())
+
+# Student.change_mode("Mix Learning")
+
+# print(student1.mode)
+# print(student2.mode)
+
+# print(Student.get_students())
+
+# student3 = Student("Jack", 20, "Physics")
+# print(Student.get_students())
+
+# print(student1.students)
+
+# student4 = Student.split_students("Jill,21,Chemistry")
+# print(student4.return_name_age_major())
