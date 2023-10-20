@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        padding: 20px;
+        margin: 0.5px;
+        display: inline-block;
+        border: 1px solid black;
+      }
+      #getEle {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="output">Hello...</div>
+    <div class="box" ondrop="dDrop()" ondragover="nDrop()">
+      <div id="getEle" ondragstart="dStart()" draggable="true">
+        Drag me please!
+      </div>
+    </div>
+    <br />
+    <div class="box" ondrop="dDrop()" ondragover="dDrop()"></div>
+    <br />
+    <div class="box" ondrop="dDrop()" ondragover="dDrop()"></div>
+    <br />
+    <div class="box" ondrop="dDrop()" ondragover="dDrop()"></div>
+
+    <script>
+      var holdItem;
+      function dStart() {
+        updateOutputDiv("Drag Started");
+        holdItem = event.target;
+      }
+
+      function nDrop() {
+        event.preventDefault();
+      }
+
+      function dDrop() {
+        event.preventDefault();
+        updateOutputDiv("Drop It...");
+        if (event.target.className == "box") {
+          holdItem.style["background-color"] = "aquamarine";
+          if (holdItem.parentElement != event.target.parentElement) {
+            holdItem.style["background-color"] = "blue";
+          }
+          event.target.appendChild(holdItem);
+        }
+      }
+
+      function updateOutputDiv(msg) {
+        output = document.getElementById("output");
+        output.innerHTML = "<br>" + msg + "<br>";
+      }
+    </script>
+  </body>
+</html>

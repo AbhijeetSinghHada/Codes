@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Program</title>
+</head>
+
+<body>
+    <div id="object1">Hello World<br>
+    </div>
+    <input type="text" id="abhi123">
+    <p>Document Object Model</p>
+    <script>
+        var obj = {
+            color: "RED",
+            brand: "BMW",
+            price: 1000000,
+            isAvailable: true,
+        }
+
+        object = document.getElementById("object1")
+
+        for (i in document) {
+            object.innerHTML += i + "   " + document[i] + "   <br>"
+        }
+        // for (i of document) {
+        //     object.innerHTML += i + "   " + obj[i] + "   <br>"
+        // }  Document is not iterable , object are not iterable therefore cannot be used with """of"""
+
+
+    </script>
+</body>
+
+</html>

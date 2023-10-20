@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="output">Hello</div>
+    <form action="imageGenerator.html" method="get" onsubmit="return valForm()">
+      FirstName : <input type="text" id="firstName" /><br />
+      LastName : <input type="text" id="lastName" /><br />
+      Age : <input type="text" id="age" /><br />
+
+      <input type="submit" value="submit" />
+    </form>
+
+    <script>
+      function valForm() {
+        var p = event.target.children;
+        if (p.firstName.value == "") {
+          updateOutputDiv("Need A First Name");
+          return false;
+        } else if (p.lastName.value == "") {
+          updateOutputDiv("Need A Last Name");
+          return false;
+        } else if (p.age.value == "") {
+          updateOutputDiv("Need Age");
+          return false;
+        }
+        return true;
+      }
+
+      function updateOutputDiv(msg) {
+        output = document.getElementById("output");
+        output.innerHTML = "<br>" + msg + "<br>";
+      }
+    </script>
+  </body>
+</html>

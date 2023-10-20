@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Program</title>
+</head>
+
+<body>
+    <div id="object1">Hello World<br>
+    </div>
+    <input type="text" id="abhi123">
+    <p>Execution Context</p>
+    <script>
+        var y = 1000
+        function Hello(x) {
+            let y = "y000"
+
+            console.log(x)
+            console.log(y)
+            console.log(this.y)
+            console.log(window.y)
+            console.log(globalThis.y)
+
+        }
+        var v = 100
+        console.log(Hello(v))
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!-- It is about howcan you restrict a user to only allow numeric input in
+a textbox -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Javascript</title>
+  </head>
+  <body>
+    <div id="output">Helloo</div>
+    <input type="text" name="myNum" onkeypress="return numCheck()" />
+
+    <script>
+      function numCheck() {
+        message(!isNaN(event.key));
+        return !isNaN(event.key);
+      }
+      function message(msg) {
+        document.getElementById("output").innerHTML = msg;
+      }
+    </script>
+  </body>
+</html>

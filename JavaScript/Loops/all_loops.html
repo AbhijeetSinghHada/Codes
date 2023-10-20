@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Program</title>
+</head>
+
+<body>
+    <div id="object1">Hello World<br>
+    </div>
+    <input type="text" id="abhi123">
+    <p>Document Object Model</p>
+    <script>
+        var newArray = ["Horse", "Dog", "Cat", "Rabbit", "Tiger", "Lion", "Elephant", "Monkey", "Donkey", "Zebra"]
+        object = document.getElementById("object1")
+        object.innerHTML += "Using For in" + "<br>";
+        for (x in newArray) {
+            object.innerHTML += newArray[x] + "<br>";
+        }
+        object.innerHTML += "<br>Using For of" + "<br>";
+        for (x of newArray) {
+            object.innerHTML += x + "<br>";
+        }
+
+    </script>
+</body>
+
+</html>

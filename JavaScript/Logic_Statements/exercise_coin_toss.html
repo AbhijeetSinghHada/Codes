@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Program</title>
+</head>
+
+<body>
+    <div id="object1">Hello World
+    </div>
+    <!-- <input type="text" id="abhi123"> -->
+    <!-- <script src="script.js"></script> -->
+    <script>
+
+        var coin = {
+            "heads": 0,
+            "tails": 1
+        }
+        tossCoin = Math.floor(Math.random() * 2);
+        console.log(tossCoin)
+        win = 0
+        prompt_val = prompt("Enter heads or tails")
+        userVal = coin[prompt_val];
+        if (tossCoin == userVal) {
+            document.getElementById("object1").innerHTML = "Win"
+        }
+        else if (userVal == undefined) {
+            document.getElementById("object1").innerHTML = "Invalid Input"
+        }
+        else {
+            coin.tails += 1
+            document.getElementById("object1").innerHTML = "Loss"
+        }
+
+    </script>
+</body>
+
+</html>

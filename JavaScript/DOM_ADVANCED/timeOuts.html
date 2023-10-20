@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Program</title>
+  </head>
+
+  <body>
+    <br />
+    <div id="output"></div>
+    <br />
+    <input type="button" onclick="startTime()" value="start" />
+    <br />
+    <input type="button" onclick="clearTime()" value="Stop" />
+    <br />
+    <input type="button" onclick="alert('Hellooooooooooo')" value="Alert" />
+
+    <script>
+      var output = document.getElementById("output");
+      function startTime() {
+        window.setTimeout(updateOutput, 3000);
+        alert("HIIIIIi");
+        myTimer = window.setTimeout(startTime, 1500);
+      }
+      function updateOutput() {
+        output.innerHTML = "Changeeee" + Math.random() * 100;
+      }
+      function clearTime() {
+        window.clearInterval(myTimer);
+      }
+    </script>
+  </body>
+</html>

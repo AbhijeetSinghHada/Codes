@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Program</title>
+</head>
+
+<body>
+    <div id="object1">Hello World
+    </div>
+    <!-- <input type="text" id="abhi123"> -->
+    <!-- <script src="script.js"></script> -->
+    <script>
+        a = 10
+        b = 20
+        console.log(a = b)
+        var a = Number(prompt("Enter a number"))
+        var b = Number(prompt("Enter another number"));
+        var c = prompt("Enter the operator");
+        switch (c) {
+            case "+":
+                document.getElementById("object1").innerHTML = a + b;
+                break;
+            case "-":
+                document.getElementById("object1").innerHTML = a - b;
+                break;
+            case "*":
+                document.getElementById("object1").innerHTML = a * b;
+                break;
+            case "/":
+                document.getElementById("object1").innerHTML = a / b;
+                break;
+            case 0:
+                document.getElementById("object1").innerHTML = "Zero is not an operator";
+                break;
+            case '0':
+                document.getElementById("object1").innerHTML = "Zero is not a string";
+                break;
+
+            default:
+                document.getElementById("object1").innerHTML = "Invalid Input";
+        }
+
+    </script>
+</body>
+
+</html>

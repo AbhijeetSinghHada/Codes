@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Program</title>
+</head>
+
+<body>
+    <div id="object1">Hello World<br>
+    </div>
+    <input type="text" id="abhi123">
+    <p>Document Object Model</p>
+    <script>
+        userInput = prompt("Enter a number : ")
+        var x = 0
+        do {
+            document.getElementById("object1").innerHTML += "Printed : " + x + "<br>"
+            x++
+        } while (x < userInput)
+        while (x > 0) {
+            document.getElementById("object1").innerHTML += "Printed : " + x + "<br>"
+            x--
+        }
+
+    </script>
+</body>
+
+</html>

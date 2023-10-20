@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Program</title>
+  </head>
+
+  <body>
+    <br />
+    <div id="output" class="hello">Pageeeee</div>
+    <form name="myForm">
+      <input type="text" id="textbox" name="textbox" value="www.google.com" />
+      <input type="button" name="udbhav" gotoUrl()" value="URL" />
+      <input type="button" onclick="myValue()" value="Value" />
+    </form>
+
+    <script>
+      obj = document.getElementById("output");
+      function gotoUrl() {
+        url = document.getElementById("textbox").value;
+        console.log(url);
+        window.location = "http://" + url;
+      }
+    </script>
+  </body>
+</html>

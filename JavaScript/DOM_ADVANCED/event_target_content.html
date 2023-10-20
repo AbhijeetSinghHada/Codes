@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Complete JavaScript Course</title>
+  </head>
+
+  <body>
+    <div id="wrapper">Page 1</div>
+    <form>
+      First Name :
+      <input
+        type="text"
+        name="e1"
+        value="Laurence"
+        onblur="alert('You changed First Name')"
+      />
+      <br />
+      Last Name :
+      <input type="text" onchange="changeName()" name="e2" value="Svekis" />
+      <br />
+      <input type="button" onClick="sendInfo()" value="Submit" />
+    </form>
+    <form>
+      First Name :
+      <input type="text" name="e1" value="Laurence" />
+      <br />
+      Last Name :
+      <input type="text" name="e2" value="Svekis" />
+      <br />
+      <input type="button" onClick="sendInfo()" value="Submit" />
+    </form>
+    <script>
+      function sendInfo() {
+        var p = event.target.parentElement;
+        message("Welcome " + p.e1.value + " " + p.e2.value);
+      }
+      function changeName() {
+        var p = event.target;
+        message("Last Name Changed to " + p.parentElement.e1.value);
+      }
+
+      function message(m) {
+        document.getElementById("wrapper").innerHTML = m;
+      }
+    </script>
+  </body>
+</html>

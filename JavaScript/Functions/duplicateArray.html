@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Program</title>
+  </head>
+
+  <body>
+    <div id="object1">Hello World<br /></div>
+    <input type="text" id="abhi123" />
+    <p>Execution Context</p>
+    <script>
+      obj = document.getElementById("object1");
+      arr = [1, 2, 3, 5, 54, 6, 7, 4, 3, 4, 6, 2, 4, 5, 2, 1, 6];
+      function duplicateArray(arr) {
+        objectTemp = {};
+        for (let i of arr) {
+          objectTemp[i] = "TEMP";
+        }
+        newArr = Object.keys(objectTemp);
+        return newArr;
+      }
+
+      obj.innerHTML = arr + "<br>" + "<br>" + duplicateArray(arr);
+    </script>
+  </body>
+</html>
