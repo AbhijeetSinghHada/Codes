@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			div {
+				border: 2px solid black;
+				font-size: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			1
+			<div>
+				2
+				<div>
+					3
+					<div>
+						4
+						<div>5</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			let divs = document.getElementsByTagName("div");
+			for (let x of divs) {
+				x.addEventListener("click", event_function, true);
+				x.addEventListener("click", event.stopPropagation);
+			}
+			function event_function() {
+				console.log(this.innerText);
+			}
+		</script>
+	</body>
+</html>

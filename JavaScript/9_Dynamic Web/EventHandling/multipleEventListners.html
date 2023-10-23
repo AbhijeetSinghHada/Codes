@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Complete JavaScript Course</title>
+		<style>
+			.holder {
+				width: 250px;
+				height: 100px;
+				background-color: #79a547;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.active {
+				background-color: #ff0000;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="message">Hello World</div>
+		<div class="holder">
+			<div class="output"></div>
+		</div>
+		<script>
+			var ele = document.querySelector(".holder");
+			var output = document.querySelector(".output");
+			ele.addEventListener("mouseover", function () {
+				this.classList.add("active");
+			});
+			ele.addEventListener("mouseout", function () {
+				this.classList.remove("active");
+			});
+			ele.addEventListener("mousemove", function () {
+				let text_data = document.createTextNode("Mouse is moving ->");
+				let corrdinates = document.createTextNode(
+					"X: " + event.clientX + " Y: " + event.clientY
+				);
+				output.innerHTML = "";
+				output.appendChild(text_data);
+				output.appendChild(document.createElement("br"));
+				output.appendChild(corrdinates);
+			});
+		</script>
+	</body>
+</html>

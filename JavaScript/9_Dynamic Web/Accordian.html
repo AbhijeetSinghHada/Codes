@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			.con {
+				border: 1px solid black;
+				padding: 20px;
+				font-size: 0.8em;
+				display: none;
+			}
+
+			.acc {
+				font-size: 1.5em;
+				background-color: #ddd;
+			}
+
+			.active {
+				display: block;
+			}
+		</style>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="acc">First Accordian</div>
+		<div class="con">
+			Helloooo.... Helloooo.... Helloooo.... Helloooo.... Helloooo....
+			Helloooo.... Helloooo.... Helloooo.... Helloooo.... Helloooo....
+			Helloooo.... Helloooo.... Helloooo.... Helloooo.... Helloooo....
+		</div>
+		<div class="acc">Second Accordian</div>
+		<div class="con">
+			Hiiiiiiiiiii.... Hiiiiiiiiiii.... Hiiiiiiiiiii.... Hiiiiiiiiiii....
+			Hiiiiiiiiiii.... Hiiiiiiiiiii.... Hiiiiiiiiiii.... Hiiiiiiiiiii....
+			Hiiiiiiiiiii.... Hiiiiiiiiiii.... Hiiiiiiiiiii.... Hiiiiiiiiiii....
+		</div>
+		<script>
+			aCordian = document.querySelectorAll(".acc");
+			conn = document.querySelectorAll(".con");
+			for (let x of aCordian) {
+				x.onclick = function () {
+					console.log(this);
+					console.log(this.innerText);
+					x.nextElementSibling.classList.toggle("active");
+				};
+			}
+		</script>
+	</body>
+</html>

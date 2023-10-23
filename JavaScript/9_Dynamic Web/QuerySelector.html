@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.output input {
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="msg">Message</div>
+		<div id="msg2">Message 2</div>
+		<div class="output">Test Me 1</div>
+		<div class="output">
+			Test Me 2
+			<input type="button" value="HELLLOOO..." />
+		</div>
+		<div class="output highlight">Test Me 3</div>
+		<div class="output">Test Me 4</div>
+		<div class="output">Test Me 5</div>
+		<div class="output highlight">Test Me 6</div>
+		<div class="output">Test Me 7</div>
+		<div class="output">Test Me 8</div>
+		<div class="output">Test Me 9</div>
+		<div class="output">Test Me 10</div>
+
+		<script>
+			var xx = document.querySelectorAll(".output");
+			for (x of xx) console.log(x.innerHTML);
+		</script>
+	</body>
+</html>
