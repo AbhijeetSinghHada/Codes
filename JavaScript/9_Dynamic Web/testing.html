@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form name="myForm">
+            <input type="url" id="url" name="url" />
+            <input type="text" id="first" name="first" />
+            <input type="text" id="last" name="last" />
+            <textarea name="output"></textarea>
+            <div id="another">
+                Parent
+                <div id="one">Test 1</div>
+                <div id="two">Test 2</div>
+                <div id="three">Test 3</div>
+                <div id="four">Test 4</div>
+                <div id="five">Test 5</div>
+                <div id="six">Test 6</div>
+            </div>
+        </form>
+
+        <script>
+            var a = document.body.children.myForm.childNodes[9].children.four;
+            console.log(document.body.children.myForm.childNodes);
+            console.log(a.parentElement.lastElementChild.id);
+        </script>
+    </body>
+</html>

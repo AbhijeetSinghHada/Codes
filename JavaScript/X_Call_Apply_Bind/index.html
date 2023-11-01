@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let name = {
+                firstname: "Abhijeet",
+                lastname: "Singh Hada",
+            };
+            let name2 = {
+                firstname: "Narpat",
+                lastname: "Singh Hada",
+            };
+            let printName = function (hometown, state) {
+                console.log(
+                    this.firstname +
+                        " " +
+                        this.lastname +
+                        " from " +
+                        hometown +
+                        ", " +
+                        state
+                );
+            };
+            printName.call(name, "Bundi", "Rajasthan");
+            printName.call(name2, "Indragarh", "Rajasthan");
+            printName.apply(name, ["Jaipur", "Rajasthan"]);
+            let nameBind = printName.bind(name, ["Kota", "Rajasthan"]);
+            console.log(nameBind);
+            console.log(nameBind());
+        </script>
+    </body>
+</html>

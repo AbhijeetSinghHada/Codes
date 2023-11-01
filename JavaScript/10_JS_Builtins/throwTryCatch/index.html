@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="message">Hello World</div>
+        <script>
+            function testMe() {
+                var x = 500;
+                try {
+                    if (x > 100) {
+                        throw "Yes its greater than 100";
+                    }
+                    if (x < 100) {
+                        throw "Oh no its less than 100";
+                    }
+                    concole(x);
+                } catch (e) {
+                    document.getElementById("message").innerHTML = e.message;
+                    console.dir(e);
+                }
+            }
+        </script>
+    </body>
+</html>

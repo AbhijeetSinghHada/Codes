@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="button" value="Pop" onclick="popup()" />
+        <input type="button" value="Close" onclick="popclose()" />
+
+        <script>
+            popup_var;
+            function popup() {
+                var url = "index.html?val=1000";
+                var opt = "top=100,left=500, width=400, height=400";
+                popup_var = window.open(url, "_blank", opt);
+            }
+            function popclose() {
+                popup_var.close();
+            }
+        </script>
+    </body>
+</html>
