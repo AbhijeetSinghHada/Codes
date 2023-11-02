@@ -1,0 +1,49 @@
+<!-- <label>Server Name</label>
+<br />
+<input type="text" class="form_control" (input)="onUpdateServerName($event)" />
+<br />
+<input type="text" class="form_control" [(ngModel)]="serverName" />
+<hr />
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+>
+  Add Server
+</button>
+<p *ngIf="serverName !== '' && serverStatus">
+  The name of Server is {{ serverName }}
+</p>
+<p [innerText]="serverCreationStatus"></p>
+<app-server *ngFor="let server of servers"></app-server>
+
+<hr /> -->
+<!-- 
+This was Assignmet 2
+<input
+  type="text"
+  class="form_control"
+  [(ngModel)]="username"
+  (input)="modifyButton($event)"
+/>
+[disabled]="!allowButton" -- comment out this
+<p>The Username is {{ username }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="username === ''"
+  (click)="resetUserName()"
+>
+  Click To Reset
+</button> -->
+
+<!-- This is Assignment 3 -->
+
+<button class="btn btn-primary" (click)="afterClick()">Display Details</button>
+<p *ngIf="passwordVisibility">Secret Password ='tuna'</p>
+<br />
+<p
+  *ngFor="let i of arrayClicks; let x = index"
+  [ngClass]="{ colorItems: i > 5 }"
+>
+  {{ i }} :{{ x }}
+</p>
