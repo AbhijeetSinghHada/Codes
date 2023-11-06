@@ -1,12 +1,21 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <h3 style="color: rgb(186, 20, 48)">
+    <!-- <div class="col-xs-12"> -->
+    <!-- <h3 style="color: rgb(186, 20, 48)">
         I'm a new componnet APP and Calling Servers {{ serverNumber }} Server
         Says '{{ serverhello() }}'
-      </h3>
-      <hr />
-      <app-servers></app-servers>
+      </h3> -->
+    <hr />
+    <!-- <app-servers></app-servers> -->
+    <app-game-control
+      class="col-md-12"
+      (incrementingEvent)="OnIncrementEvent($event)"
+    ></app-game-control>
+    <div class="col-md-6" appBasicHighlight>
+      <app-odd *ngFor="let value of odd" [value]="value"></app-odd>
+    </div>
+    <div class="col-md-6" appBetterHighlight>
+      <app-even *ngFor="let value of even" [value]="value"></app-even>
     </div>
   </div>
 </div>
