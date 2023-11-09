@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Ingredient } from '../shared/ingredient.model';
 import { LoggingService } from '../shared/logging.service';
+import { ShoppingListService } from './shopping-list.service';
+import { RecipeService } from '../recipes/recipe.service';
 
 @Component({
   selector: 'app-shopping-list',
@@ -8,15 +10,30 @@ import { LoggingService } from '../shared/logging.service';
   styleUrls: ['./shopping-list.component.css'],
 })
 export class ShoppingListComponent {
-  constructor(private loggingService: LoggingService) {}
-  ingredients: Ingredient[] = [
-    new Ingredient('Apples', 5),
-    new Ingredient('Tomataos', 10),
-  ];
+  constructor(
+    private loggingService: LoggingService,
+    private shoppingListService: ShoppingListService
+  ) {
+    this.ingredients = this.shoppingListService.getIngredients();
+    shoppingListService.ingredientsExchangeEvent.subscribe((ingredients) =>
+      this.addIngredients(ingredients)
+    );
+  }
+  ingredients: Ingredient[];
+
+  addIngredients(ingredientsList) {
+    for (let ingredient of ingredientsList) {
+      this.shoppingListService.addIngredient(ingredient);
+    }
+    this.ingredients = this.shoppingListService.getIngredients();
+  }
 
   onAddClick(event) {
-    this.loggingService.logUserInput(event);
     this.loggingService.dataAdded.emit(JSON.stringify(event));
-    this.ingredients.push(event);
+    this.shoppingListService.addIngredient(event);
+    this.ingredients = this.shoppingListService.getIngredients();
+  }
+  ngOnDestroy() {
+    console.log('shoopping list on destroy');
   }
 }

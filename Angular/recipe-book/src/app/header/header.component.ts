@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +14,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class HeaderComponent {
   collapsed = true;
   @Output() eventUserSelection = new EventEmitter<string>();
+  @Input() name1: string;
   onToggleRecipe(event) {
     this.eventUserSelection.emit(event.target.innerText);
   }
