@@ -1,39 +1,33 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+
 import { Ingredient } from '../shared/ingredient.model';
-import { LoggingService } from '../shared/logging.service';
 import { ShoppingListService } from './shopping-list.service';
-import { RecipeService } from '../recipes/recipe.service';
+
 
 @Component({
   selector: 'app-shopping-list',
   templateUrl: './shopping-list.component.html',
-  styleUrls: ['./shopping-list.component.css'],
+  styleUrls: ['./shopping-list.component.css']
 })
-export class ShoppingListComponent {
-  constructor(
-    private loggingService: LoggingService,
-    private shoppingListService: ShoppingListService
-  ) {
-    this.ingredients = this.shoppingListService.getIngredients();
-    shoppingListService.ingredientsExchangeEvent.subscribe((ingredients) =>
-      this.addIngredients(ingredients)
-    );
-  }
+export class ShoppingListComponent implements OnInit, OnDestroy {
   ingredients: Ingredient[];
+  private igChangeSub: Subscription;
 
-  addIngredients(ingredientsList) {
-    for (let ingredient of ingredientsList) {
-      this.shoppingListService.addIngredient(ingredient);
-    }
-    this.ingredients = this.shoppingListService.getIngredients();
+  constructor(private slService: ShoppingListService) {
   }
 
-  onAddClick(event) {
-    this.loggingService.dataAdded.emit(JSON.stringify(event));
-    this.shoppingListService.addIngredient(event);
-    this.ingredients = this.shoppingListService.getIngredients();
+  ngOnInit() {
+    this.ingredients = this.slService.getIngredients();
+    this.igChangeSub = this.slService.ingredientsChanged
+      .subscribe(
+        (ingredients: Ingredient[]) => {
+          this.ingredients = ingredients;
+        }
+      );
   }
-  ngOnDestroy() {
-    console.log('shoopping list on destroy');
+
+  ngOnDestroy(): void {
+    this.igChangeSub.unsubscribe();
   }
 }

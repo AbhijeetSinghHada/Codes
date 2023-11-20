@@ -1,0 +1,82 @@
+<h3>Reimbursement System</h3>
+<hr />
+<div class="container">
+  <button class="btn btn-primary" (click)="onAdd()">Add Reimbursement</button>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <form (ngSubmit)="onSubmit()" #assignmentForm="ngForm">
+        <div
+          class="form-inline"
+          [ngModelGroup]="formData.reimbursement_id"
+          *ngFor="let formData of userDataArray; let formIndex = index"
+        >
+          <input
+            type="number"
+            id="reimbursement_id"
+            class="form-control"
+            name="reimbursement_id"
+            placeholder="Enter Id"
+            [ngModel]="userDataArray[formIndex].reimbursement_id"
+            required
+          />
+          <input
+            type="text"
+            id="reimbursement_name"
+            class="form-control"
+            name="reimbursement_name"
+            placeholder="Enter Name"
+            [ngModel]="userDataArray[formIndex].reimbursement_name"
+            required
+          />
+          <input
+            type="number"
+            id="reimbursement_amount"
+            class="form-control"
+            placeholder="Enter Amount"
+            [ngModel]="userDataArray[formIndex].reimbursement_amount"
+            name="reimbursement_amount"
+            required
+          />
+          <select
+            id="reimbursement_type"
+            class="form-control"
+            [ngModel]="userDataArray[formIndex].reimbursement_type"
+            name="reimbursement_type"
+          >
+            <option value="cash">Cash</option>
+            <option value="cheque">Cheque</option>
+            <option value="online">Online</option>
+          </select>
+          <button class="btn btn-primary" (click)="onDelete(formIndex)">
+            Delete
+          </button>
+        </div>
+        <button
+          class="btn btn-default"
+          type="submit"
+          [disabled]="!assignmentForm.valid"
+        >
+          Save
+        </button>
+      </form>
+      <table class="table" *ngIf="showTable">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let x of userDataArray">
+            <th scope="row">{{ x.reimbursement_id }}</th>
+            <td>{{ x.reimbursement_name }}</td>
+            <td>{{ x.reimbursement_amount }}</td>
+            <td>{{ x.reimbursement_type }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
