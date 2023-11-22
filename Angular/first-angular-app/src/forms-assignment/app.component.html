@@ -7,7 +7,7 @@
       <form (ngSubmit)="onSubmit()" #assignmentForm="ngForm">
         <div
           class="form-inline"
-          [ngModelGroup]="formData.reimbursement_id"
+          [ngModelGroup]="formIndex"
           *ngFor="let formData of userDataArray; let formIndex = index"
         >
           <input

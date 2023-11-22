@@ -1,0 +1,95 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <form (ngSubmit)="onSubmit()" #assignmentForm="ngForm">
+        <div class="row g-3 mt-1">
+          <input
+            type="text"
+            class="col-sm me-3"
+            name="user-id"
+            placeholder="Enter Id"
+            [(ngModel)]="user.id"
+            required
+          />
+          <input
+            type="text"
+            id="user-name"
+            class="col-sm me-3"
+            name="user-name"
+            placeholder="Enter Name"
+            [(ngModel)]="user.name"
+            required
+          />
+          <input
+            type="text"
+            id="user-designation"
+            class="col-sm me-3"
+            name="user-designation"
+            placeholder="Enter Designation"
+            [(ngModel)]="user.designation"
+            required
+          />
+        </div>
+        <button class="btn btn-primary m-2" type="button" (click)="onAdd()">
+          Add Reimbursement
+        </button>
+
+        <div
+          class="row g-3 mt-1"
+          *ngFor="
+            let reimburesment_item of user.reimburesment;
+            let formIndex = index
+          "
+        >
+          <input
+            type="number"
+            class="col-sm me-3"
+            name="{{ formIndex }}reimbursement_id"
+            placeholder="Enter Id"
+            [(ngModel)]="reimburesment_item.id"
+            required
+          />
+          <input
+            type="text"
+            class="col-sm me-3"
+            name="{{ formIndex }}reimbursement_name"
+            placeholder="Enter Name"
+            [(ngModel)]="reimburesment_item.name"
+            required
+          />
+          <input
+            type="number"
+            class="col-sm me-3"
+            placeholder="Enter Amount"
+            [(ngModel)]="reimburesment_item.amount"
+            name="{{ formIndex }}reimbursement_amount"
+            required
+          />
+          <select
+            class="col-sm me-3"
+            [(ngModel)]="reimburesment_item.type"
+            name="{{ formIndex }}reimbursement_type"
+          >
+            <option value="cash">Cash</option>
+            <option value="cheque">Cheque</option>
+            <option value="online">Online</option>
+          </select>
+          <button
+            class="btn btn-primary col-sm"
+            (click)="onDelete(formIndex)"
+            *ngIf="user.reimburesment.length > 1"
+          >
+            Delete
+          </button>
+        </div>
+        <button
+          class="btn btn-primary m-3"
+          type="submit"
+          [disabled]="!assignmentForm.valid"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

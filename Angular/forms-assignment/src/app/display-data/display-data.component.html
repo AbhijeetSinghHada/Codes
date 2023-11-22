@@ -1,0 +1,39 @@
+<div>
+  <h1>User Details</h1>
+  <div
+    class="border border-primary bg-primary bg-gradient ml-2 w-25 p-1 text-light fw-lightbold fs-4 user-details-center"
+  >
+    <span>User ID : </span>
+    <span>{{ userData.id }}</span>
+  </div>
+  <div
+    class="border border-primary bg-primary bg-gradient ml-2 w-25 p-1 text-light fw-lightbold fs-4 user-details-center"
+  >
+    <span>User Name : </span>
+    <span>{{ userData.name }}</span>
+  </div>
+  <div
+    class="border border-primary bg-primary bg-gradient ml-2 w-25 p-1 text-light fw-lightbold fs-4 user-details-center"
+  >
+    <span>Designation : </span>
+    <span>{{ userData.designation }}</span>
+  </div>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of userData.reimburesment">
+      <th scope="row">{{ item.id }}</th>
+      <td>{{ item.name }}</td>
+      <td>{{ item.amount }}</td>
+      <td>{{ item.type }}</td>
+    </tr>
+  </tbody>
+</table>
