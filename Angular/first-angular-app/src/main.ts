@@ -1,6 +1,6 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule } from './reactive-form/app.module';
+import { AppModule } from './HTTP/http-01/app/app.module';
 
 platformBrowserDynamic()
   .bootstrapModule(AppModule)

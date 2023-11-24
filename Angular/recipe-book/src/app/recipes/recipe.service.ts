@@ -3,22 +3,12 @@ import { Injectable } from '@angular/core';
 import { Recipe } from './recipe.model';
 import { Ingredient } from '../shared/ingredient.model';
 import { ShoppingListService } from '../shopping-list/shopping-list.service';
+import { Subject } from 'rxjs';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class RecipeService {
+  recipesChanges = new Subject<Recipe[]>();
   private recipes: Recipe[] = [
-    new Recipe(
-      'Tasty Schnitzel',
-      'A super-tasty Schnitzel - just awesome!',
-      'https://upload.wikimedia.org/wikipedia/commons/7/72/Schnitzel.JPG',
-      [new Ingredient('Meat', 1), new Ingredient('French Fries', 20)]
-    ),
-    new Recipe(
-      'Big Fat Burger',
-      'What else you need to say?',
-      'https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg',
-      [new Ingredient('Buns', 2), new Ingredient('Meat', 1)]
-    ),
     new Recipe(
       'Kachori',
       'Kota kachori is a delicious snack from the city of Kota in Rajasthan, India. It is a deep-fried pastry stuffed with a spicy mixture of urad dal, onions, and spices. Kota kachori is crispy on the outside and soft on the inside, and has a unique flavor that makes it irresistible.',
@@ -52,8 +42,21 @@ export class RecipeService {
   getRecipe(index: number) {
     return this.recipes[index];
   }
+  addRecipe(newRecipe: Recipe) {
+    this.recipes.push(newRecipe);
+    this.recipesChanges.next(this.recipes);
+  }
 
+  updateRecipe(index: number, updatedRecipe: Recipe) {
+    this.recipes[index] = updatedRecipe;
+    this.recipesChanges.next(this.recipes);
+  }
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
     this.slService.addIngredients(ingredients);
+  }
+
+  deleteRecipe(index: number) {
+    this.recipes.splice(index, 1);
+    this.recipesChanges.next(this.recipes);
   }
 }

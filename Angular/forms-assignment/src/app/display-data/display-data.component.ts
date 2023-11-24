@@ -12,10 +12,9 @@ import { UserModel } from '../user.model';
 export class DisplayDataComponent {
   userData: UserModel;
   userObservableSubscription: Subscription;
-  constructor(private userService: UserService) {
-    this.userData = this.userService.user;
-  }
+  constructor(private userService: UserService) {}
   ngOnInit() {
+    this.userData = this.userService.user;
     this.userObservableSubscription = this.userService.observable.subscribe(
       (data) => {
         console.log(data);

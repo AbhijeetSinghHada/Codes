@@ -15,15 +15,14 @@
               class="help-block"
               *ngIf="
                 !signupForm.get('userData.username').valid &&
-                signupForm.get('userData.username').touched &&
-                signupForm.get('userData.username').errors['required']
+                signupForm.get('userData.username').touched
               "
               >Please Enter a Valid Username...</span
             >
             <span
               class="help-block"
               *ngIf="
-                signupForm.get('userData.username').errors['nameIsForbidden']
+                signupForm.get('userData.username').hasError['nameIsForbidden']
               "
               >This Username is Forbidden...</span
             >
@@ -77,3 +76,4 @@
     </div>
   </div>
 </div>
+<app-assignment-form></app-assignment-form>
