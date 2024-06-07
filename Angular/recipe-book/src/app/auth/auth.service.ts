@@ -88,7 +88,6 @@ export class AuthService {
     const user = new User(email, userID, token, expirationDate);
     this.user.next(user);
     this.autoLogout(+expiresIn * 1000);
-    console.log(expiresIn);
 
     localStorage.setItem('userData', JSON.stringify(user));
   }

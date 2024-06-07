@@ -48,6 +48,15 @@ export class HomeComponent implements OnInit, OnDestroy {
         }
       );
 
+    let new_Observable = new Observable((subscriber_) => {
+      setInterval(() => {
+        subscriber_.next(20);
+      }, 2000);
+      subscriber_.error();
+      subscriber_.complete();
+    });
+
+    new_Observable.subscribe((data) => {});
     // this.firstSubscription = this.testObservable.subscribe(
     //   (value) => {
     //     console.log(value);
@@ -74,4 +83,11 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.firstSubscription.unsubscribe();
   }
+}
+
+import { Directive } from '@angular/core';
+
+@Directive({ selector: '[selector-name]' })
+export class NameDirective {
+  constructor() {}
 }
